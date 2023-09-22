@@ -10,5 +10,10 @@ class Solver
     end
     return result
   end
-end
 
+  public
+
+  def reverse(word)
+    word.reverse
+  end
+end
