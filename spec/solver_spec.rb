@@ -2,7 +2,10 @@ require_relative '../solver'
 
 describe Solver do
   describe `#factorial` do
-    facto = Solver.new
-    expect(facto.factorial).to eql(10)
+    it 'should return factorial number' do
+      facto = Solver.new
+      value = facto.factorial(5)
+      expect(value).to eql(120)
+    end
   end
 end
