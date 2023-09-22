@@ -1,7 +1,11 @@
+# frozen_string_literal: true
+
 # class Solver
 class Solver
   def factorial(num)
     result = 1
+    raise ArgumentError, 'Input must be a non-negative integer' if num.negative?
+
     result if [0, 1].include?(num)
     (1..num).each do |i|
       result *= i
