@@ -1,17 +1,15 @@
+# frozen_string_literal: true
+
 # class Solver
 class Solver
   def factorial(num)
     result = 1
-    if [0, 1].include?(num)
-      result
-    end
-    for i in 1..num do
+    result if [0, 1].include?(num)
+    (1..num).each do |i|
       result *= i
     end
-    return result
+    result
   end
-
-  public
 
   def reverse(word)
     word.reverse
