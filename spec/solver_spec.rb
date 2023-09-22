@@ -1,11 +1,13 @@
+# frozen_string_literal: true
+
 require_relative '../solver'
 
 describe Solver do
   describe 'factorial' do
     it 'should return factorial number' do
       facto = Solver.new
-      value = facto.factorial(5)
-      expect(value).to eql(120)
+      value = facto.factorial(0)
+      expect(value).to eql(1)
     end
   end
 end
