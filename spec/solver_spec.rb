@@ -38,4 +38,10 @@ describe 'fizzbuzz' do
     result = solver.fizzbuzz(15)
     expect(result).to eql ('fizzbuzz')
   end
+
+  it 'shlould return the number when it is not divisible by neither 3 nor 5' do
+    solver = Solver.new
+    result = solver.fizzbuzz(7)
+    expect(result).to eql ('7')
+  end
 end
