@@ -32,4 +32,10 @@ describe 'fizzbuzz' do
     result = solver.fizzbuzz(5)
     expect(result).to eql ('buzz')
   end
+
+  it 'shlould return fizzbuzz when the number is divisible by both 3 & 5' do
+    solver = Solver.new
+    result = solver.fizzbuzz(15)
+    expect(result).to eql ('fizzbuzz')
+  end
 end
