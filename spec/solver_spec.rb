@@ -7,13 +7,23 @@ describe Solver do
       value = facto.factorial(5)
       expect(value).to eql(120)
     end
+  end
 end
 
 describe 'reverse' do
-    it 'should return the reversed string' do
-      solver = Solver.new
-      reversed = solver.reverse('hello')
-      expect(reversed).to eql('olleh')
-    end
+  it 'should return the reversed string' do
+    solver = Solver.new
+    reversed = solver.reverse('hello')
+    expect(reversed).to eql('olleh')
+  end
+end
+
+  # FIZZBUZZ
+
+describe 'fizzbuzz' do
+  it 'shlould return fizz when the number is divisible by 3' do
+    solver = Solver.new
+    result = solver.fizzbuzz(9)
+    expect(result).to eql ('fizz')
   end
 end
